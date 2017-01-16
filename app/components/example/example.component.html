@@ -1,0 +1,23 @@
+<ActionBar title="Example" class="actionbar">
+    <NavigationButton text="Back" (tap)="goBack()"></NavigationButton>
+</ActionBar>
+<StackLayout class="page-wrapper">
+    <StackLayout>
+        <StackLayout class="picture-wrapper">
+            <Image class="picture" src="~/assets/images/nativescript-nl.png"></Image>
+        </StackLayout>
+        <StackLayout class="page">
+            <Label class="header" text="{{header}}"></Label>
+            <Button class="button" text="Load & save" (tap)="loadData()"></Button>
+            <Button class="button" text="Delete all" (tap)="deleteData()"></Button>
+        </StackLayout>
+        <ListView [items]="presidentList" (itemTap)="showCodeName($event)" height="300">
+            <template let-item="item">
+                <StackLayout style="padding: 10">
+                    <Label [text]="item.name"></Label>
+                    <Label [text]="item.codename"></Label>
+                </StackLayout>
+            </template>
+        </ListView>
+    </StackLayout>
+</StackLayout>
