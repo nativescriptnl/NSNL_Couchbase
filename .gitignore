@@ -1,7 +1,0 @@
-.idea
-*.js
-*.map
-lib
-node_modules
-platforms/android
-platforms/ios
