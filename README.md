@@ -13,3 +13,5 @@ npm install
 tns platform add ios
 tns livesync ios --watch
 ```
+
+[[https://github.com/nativescriptnl/NSNL_Couchbase/blob/master/img/nsnl_couchbase.gif|alt=screenshots]]
