@@ -14,4 +14,4 @@ tns platform add ios
 tns livesync ios --watch
 ```
 
-![screenshots](img/nsnl_couchbase.gif)]
+![screenshots](img/nsnl_couchbase.gif)
